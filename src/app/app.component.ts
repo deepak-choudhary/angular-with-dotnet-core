@@ -2,9 +2,17 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+  <nav>
+    <a routerLink='Register'>SignUp</a><br/>
+    <a routerLink='Login'>SignIn</a><br/>
+    <a routerLink='Home'>Home</a><br/>
+  </nav>  
+  <router-outlet>
+
+  </router-outlet>
+  `
 })
 export class AppComponent {
-  title = 'my-first-app';
+  title = 'UI';
 }
